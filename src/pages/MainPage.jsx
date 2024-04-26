@@ -2,6 +2,7 @@ import HeadereBar from "../components/HeaderBar";
 import SideBarMenu from "../components/SideBarMenu";
 
 import '../styles/pages/mainPage.sass'
+import CadastroForncedor from "./CadastroForncedor";
 
 export default function MainPage() {
     return (
@@ -9,7 +10,7 @@ export default function MainPage() {
             <div className="main_page_container">
                 <SideBarMenu />
                 <div className="small_container">
-                    ggg
+                    <CadastroForncedor />
                 </div>
             </div>    
         </>
