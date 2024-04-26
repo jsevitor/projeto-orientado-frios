@@ -1,0 +1,25 @@
+@use 'variables'
+
+@mixin card
+    -webkit-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
+    -moz-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
+    box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
+    border-radius: .5rem
+
+@mixin card_header
+    height: 3rem
+    width: 40rem
+    padding: 1rem
+    display: flex
+    align-items: center
+    background-image: variables.$main-gradient
+    border-radius: .5rem .5rem 0 0
+
+@mixin card_body
+    height: 8rem
+    width: 40rem
+    padding: 1rem
+    display: flex
+    align-items: center
+    background-color: variables.$secondary
+    border-radius: 0 0 .5rem .5rem

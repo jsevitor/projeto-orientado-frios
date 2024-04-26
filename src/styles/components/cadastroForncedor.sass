@@ -1,0 +1,17 @@
+@use '../variables'
+@use '../mixins'
+
+.card
+    @include mixins.card
+
+.card_header
+    @include mixins.card_header
+
+    h2
+        color: variables.$white
+        font-size: 18px
+
+.card_body
+    @include mixins.card_body
+
+    
