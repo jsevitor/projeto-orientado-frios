@@ -2,28 +2,30 @@
 
 .nav_container
     background-color: variables.$secondary
-    width: 300px
-    height: calc( 100vh - 80px )
+    width: 350px
+    height: auto
     padding: 4rem 2rem 0 0
 
 .menu
     display: flex
     flex-direction: column
-    gap: 2rem
+    gap: 1rem
 
     li
         font-size: 12px
-        padding: 1rem
-        border: 1px solid variables.$black
+        padding: .5rem 1rem
         border-radius: 0 .5rem .5rem 0
 
     li:hover
         cursor: pointer
         background-color: variables.$primary-dark
+
+    a
+        display: flex
+        gap: .5rem
     
     a>h2:hover
         color: variables.$white
 
-
-
-        
+.icons
+    font-size: 20px
