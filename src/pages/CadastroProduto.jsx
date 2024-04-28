@@ -21,13 +21,8 @@ export default function CadastroProduto() {
                                 <input type="text" />
                             </div>
                             <div className="forms">
-                                <label htmlFor="">Categoria</label>
-                                <select name="account_type">
-                                    <option value="">Selecione</option>
-                                    <option value="">Categoria 1</option>
-                                    <option value="">Categoria 2</option>
-                                    <option value="">Categoria 3</option>
-                                </select>
+                                <label htmlFor="">ID</label>
+                                <input type="text" />
                             </div>
                             <div className="forms similar">
                                 <label htmlFor="">Forncedor</label>
@@ -39,10 +34,19 @@ export default function CadastroProduto() {
                                 </select>
                             </div>
                             <div className="forms">
+                                <label htmlFor="">Categoria</label>
+                                <select name="account_type">
+                                    <option value="">Selecione</option>
+                                    <option value="">Categoria 1</option>
+                                    <option value="">Categoria 2</option>
+                                    <option value="">Categoria 3</option>
+                                </select>
+                            </div>
+                            <div className="forms">
                                 <label htmlFor="">Marca</label>
                                 <input type="text" />
                             </div>
-                            <div className="forms similar">
+                            <div className="forms picture">
                                 <label htmlFor="">Foto</label>
                                 <input type="file" />
                             </div>
