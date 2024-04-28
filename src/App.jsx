@@ -1,14 +1,11 @@
-
-import MainPage from './pages/MainPage'
+import CadastroForncedor from './pages/CadastroForncedor'
 import './styles/index.sass'
 
-function App() {
+export default function App() {
   
   return (
     <>
-      <MainPage />
+      <CadastroForncedor />
     </>
   )
 }
-
-export default App

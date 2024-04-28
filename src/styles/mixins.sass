@@ -1,5 +1,16 @@
 @use 'variables'
 
+@mixin page_container
+    display: flex
+    width: 100wv
+
+@mixin content_container
+    width: 100%
+    padding: 2rem
+    display: flex
+    align-items: center
+    justify-content: center
+
 @mixin card
     -webkit-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
     -moz-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
@@ -28,3 +39,9 @@
     background-color: variables.$primary-color   
     border-radius: .25rem
     cursor: pointer
+
+    &:hover
+        color: variables.$white
+        scale: 1.05
+        background-color: variables.$primary-dark
+        border: 1px solid variables.$primary-color

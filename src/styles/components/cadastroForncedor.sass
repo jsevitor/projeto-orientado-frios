@@ -1,54 +1,11 @@
 @use '../variables'
 @use '../mixins'
 
-.card
-    @include mixins.card
-
-.card_header
-    @include mixins.card_header
-
-    h2
-        color: variables.$white
-        font-size: 18px
-
-.card_body
-    @include mixins.card_body
-    display: grid
-    grid-template-columns: 1fr 1fr
-    gap: .5rem
-
-.forms
-    display: flex
-    flex-direction: column
-
-    label
-        font-size: 14px
-
-    input
-        width: 100%
-        padding: .2rem .5rem
-        border: none
-        border-radius: .1rem
-        background-color: variables.$secondary-light
-        outline: 1px solid variables.$primary-color
-
 .commum
+    grid-column: 1 / span 3
+
+.similar
     grid-column: 1 / span 2
-
-.action_btn
-    display: flex
-    gap: 1rem
-    justify-content: center
-    padding-top: 2rem
-
-.btn
-    @include mixins.btn
-
-    &:hover
-        color: variables.$white
-        scale: 1.05
-        background-color: variables.$primary-dark
-        border: 1px solid variables.$primary-color
 
 .bank_info
     display: grid
