@@ -26,13 +26,13 @@ export default function SideBarMenu() {
                     </a>
                 </li>
                 <li>
-                    <a href="/produtos">
+                    <a href="/entrada">
                         <FontAwesomeIcon icon={faClipboardList} className="icons" />
                         <h2>Produtos</h2>
                     </a>
                     <ul className='subMenu'>
-                        <li><a href="/"><h3>Entrada de Produtos</h3></a></li>
-                        <li><a href="/produtos"><h3>Retirada de Produtos</h3></a></li>
+                        <li><a href="/entrada"><h3>Entrada de Produtos</h3></a></li>
+                        <li><a href="/retirada"><h3>Retirada de Produtos</h3></a></li>
                         <li><a href="/usuario"><h3>Lista de Produtos</h3></a></li>
                     </ul>
                 </li>
