@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.page_container {
+  display: flex;
+  width: 100wv;
+}
+
+.content_container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 10px 10px 15px -8px rgba(47, 47, 47, 0.5);
+  border-radius: 0.5rem;
+}
+
+.card_header {
+  height: 3rem;
+  width: 40rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(81, 131, 92) 0%, rgb(117, 167, 128) 100%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card_header h2 {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.card_body {
+  width: 40rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #c7c6c6;
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+.forms label {
+  font-size: 14px;
+}
+.forms input, .forms select {
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 0.1rem;
+  background-color: #F2F0F0;
+  outline: 1px solid #75A780;
+}
+
+.action_btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.btn {
+  padding: 0.2rem 1rem;
+  background-color: #75A780;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #FFFFFF;
+  scale: 1.01;
+  background-color: #51835C;
+  border: 1px solid #75A780;
+}/*# sourceMappingURL=cadastros.css.map */
