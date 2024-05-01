@@ -7,6 +7,7 @@ import EntradaProduto from './pages/EntradaProduto'
 import RetiradaProduto from './pages/RetiradaProduto'
 
 import './styles/index.sass'
+import ListaProdutos from './pages/ListaProdutos'
 
 export default function App() {
   
@@ -15,12 +16,13 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           
-          <Route index element={ <RetiradaProduto /> } />
-          <Route path='/forncedor' element={<CadastroForncedor/>} />
+          <Route index element={ <ListaProdutos /> } />
+          <Route path='/fornecedor' element={<CadastroForncedor/>} />
           <Route path='/produtos' element={<CadastroProduto/>} />
           <Route path='/usuario' element={<CadastroUsuario/>} />
           <Route path='/entrada' element={<EntradaProduto />} />
           <Route path='/retirada' element={<RetiradaProduto />} />
+          <Route path='/lista' element={<ListaProdutos />} />
         </Routes>
       </BrowserRouter>
     </>
