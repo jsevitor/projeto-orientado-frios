@@ -1,0 +1,23 @@
+@use '../variables'
+@use '../mixins'
+
+.usuario .page_container
+    height: auto
+
+.usuario .content_container
+    background-image: url("https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    background-repeat: no-repeat
+    background-size: cover
+
+.usuario .commum
+    grid-column: 1 / span 3
+
+.usuario .similar
+    grid-column: 2 / span 2
+
+.usuario .login_form
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: .5rem
+    padding: 1rem 0
+

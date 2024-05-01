@@ -1,0 +1,24 @@
+// cadastroFornecedor.sass
+
+@use '../variables'
+@use '../mixins'
+
+.fornecedor .content_container
+    background-image: url("src/assets/company.svg")
+    background-repeat: no-repeat
+    background-size: cover
+
+.fornecedor .name
+    grid-column: 2 / span 2
+
+.fornecedor .commum
+    grid-column: 1 / span 3
+
+.fornecedor .similar
+    grid-column: 1 / span 2
+
+.fornecedor .bank_info
+    display: grid
+    grid-template-columns: 1fr .5fr 1fr
+    gap: .5rem
+    padding: 1rem 0

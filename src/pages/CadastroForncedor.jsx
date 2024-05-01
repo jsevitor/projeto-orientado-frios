@@ -1,12 +1,12 @@
 import HeaderBar from '../components/HeaderBar'
 import SideBarMenu from "../components/SideBarMenu"
 
-import '../styles/pages/cadastros.sass'
-import '../styles/components/cadastroForncedor.sass'
+import '../styles/cadastros.sass'
+import '../styles/pages/cadastroForncedor.sass'
 
 export default function CadastroForncedor() {
     return (
-        <>
+        <div className='fornecedor'>
             <HeaderBar />
             <div className="page_container">
                 <SideBarMenu />
@@ -16,7 +16,11 @@ export default function CadastroForncedor() {
                             <h2>Cadastro de Fornecedor</h2>
                         </div>
                         <div className="card_body">
-                            <div className="forms commum">
+                            <div className="forms">
+                                <label htmlFor="">ID</label>
+                                <input type="text" />
+                            </div>
+                            <div className="forms name">
                                 <label htmlFor="">Nome</label>
                                 <input type="text" />
                             </div>
@@ -97,6 +101,6 @@ export default function CadastroForncedor() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

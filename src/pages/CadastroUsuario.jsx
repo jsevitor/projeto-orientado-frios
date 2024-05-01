@@ -1,12 +1,12 @@
 import HeaderBar from '../components/HeaderBar'
 import SideBarMenu from "../components/SideBarMenu"
 
-import '../styles/pages/cadastros.sass'
-import '../styles/components/cadastroUsuario.sass'
+import '../styles/cadastros.sass'
+import '../styles/pages/cadastroUsuario.sass'
 
 export default function CadastroUsuario() {
     return (
-        <>
+        <div className='usuario'>
             <HeaderBar />
             <div className="page_container">
                 <SideBarMenu />
@@ -68,7 +68,7 @@ export default function CadastroUsuario() {
                                 <label htmlFor="">UF</label>
                                 <input type="text" />
                             </div>
-                            <div className="forms picture">
+                            <div className="forms similar">
                                 <label htmlFor="">Foto</label>
                                 <input type="file" />
                             </div>
@@ -96,6 +96,6 @@ export default function CadastroUsuario() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

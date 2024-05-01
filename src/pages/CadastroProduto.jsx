@@ -1,12 +1,12 @@
 import HeaderBar from '../components/HeaderBar'
 import SideBarMenu from "../components/SideBarMenu"
 
-import '../styles/pages/cadastros.sass'
-import '../styles/components/cadastroProduto.sass'
+import '../styles/cadastros.sass'
+import '../styles/pages/cadastroProduto.sass'
 
 export default function CadastroProduto() {
     return (
-        <>
+        <div className='produto'>
             <HeaderBar />
             <div className="page_container">
                 <SideBarMenu />
@@ -16,22 +16,13 @@ export default function CadastroProduto() {
                             <h2>Cadastro de Produto</h2>
                         </div>
                         <div className="card_body">
-                            <div className="forms similar">
-                                <label htmlFor="">Nome</label>
-                                <input type="text" />
-                            </div>
                             <div className="forms">
                                 <label htmlFor="">ID</label>
                                 <input type="text" />
                             </div>
                             <div className="forms similar">
-                                <label htmlFor="">Forncedor</label>
-                                <select name="account_type">
-                                    <option value="">Selecione</option>
-                                    <option value="">Fornecedor 1</option>
-                                    <option value="">Fornecedor 2</option>
-                                    <option value="">Fornecedor 3</option>
-                                </select>
+                                <label htmlFor="">Nome</label>
+                                <input type="text" />
                             </div>
                             <div className="forms">
                                 <label htmlFor="">Categoria</label>
@@ -42,6 +33,16 @@ export default function CadastroProduto() {
                                     <option value="">Categoria 3</option>
                                 </select>
                             </div>
+                            <div className="forms similar">
+                                <label htmlFor="">Forncedor</label>
+                                <select name="account_type">
+                                    <option value="">Selecione</option>
+                                    <option value="">Fornecedor 1</option>
+                                    <option value="">Fornecedor 2</option>
+                                    <option value="">Fornecedor 3</option>
+                                </select>
+                            </div>
+                            
                             <div className="forms">
                                 <label htmlFor="">Marca</label>
                                 <input type="text" />
@@ -60,6 +61,6 @@ export default function CadastroProduto() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

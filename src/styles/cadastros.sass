@@ -1,0 +1,48 @@
+@use 'variables'
+@use 'mixins'
+
+.page_container
+    @include mixins.page_container
+
+.content_container
+    @include mixins.content_container
+
+.card
+    @include mixins.card
+
+.card_header
+    @include mixins.card_header
+
+    h2
+        color: variables.$white
+        font-size: 18px
+
+.card_body
+    @include mixins.card_body
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: .5rem
+
+.forms
+    display: flex
+    flex-direction: column
+
+    label
+        font-size: 14px
+
+    input, select
+        width: 100%
+        padding: .2rem .5rem
+        border: none
+        border-radius: .1rem
+        background-color: variables.$secondary-light
+        outline: 1px solid variables.$primary-color
+
+.action_btn
+    display: flex
+    gap: 1rem
+    justify-content: center
+    padding-top: 2rem
+
+.btn
+    @include mixins.btn
