@@ -37,12 +37,12 @@ export default function SideBarMenu() {
                     </ul>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/fornecedor">
                         <FontAwesomeIcon icon={faAddressCard} className="icons" />
                         <h2>Cadastros</h2>
                     </a>
                     <ul className='subMenu'>
-                        <li><a href="/"><h3>Cadastro de Fornecedor</h3></a></li>
+                        <li><a href="/fornecedor"><h3>Cadastro de Fornecedor</h3></a></li>
                         <li><a href="/produtos"><h3>Cadastro de Produtos</h3></a></li>
                         <li><a href="/usuario"><h3>Cadastro de Usuário</h3></a></li>
                     </ul>
