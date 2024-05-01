@@ -8,6 +8,7 @@ import RetiradaProduto from './pages/RetiradaProduto'
 
 import './styles/index.sass'
 import ListaProdutos from './pages/ListaProdutos'
+import Home from './pages/Home'
 
 export default function App() {
   
@@ -16,7 +17,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           
-          <Route index element={ <ListaProdutos /> } />
+          <Route index element={ <Home /> } />
           <Route path='/fornecedor' element={<CadastroForncedor/>} />
           <Route path='/produtos' element={<CadastroProduto/>} />
           <Route path='/usuario' element={<CadastroUsuario/>} />
