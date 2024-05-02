@@ -8,7 +8,7 @@ import {
 
 } from '@fortawesome/free-solid-svg-icons';
 
-import '../styles/components/sideBarMenu.sass'
+import '../SideBarMenu/sideBarMenu.sass'
 
 export default function SideBarMenu() {
 

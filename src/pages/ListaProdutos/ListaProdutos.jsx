@@ -1,8 +1,8 @@
 import React from 'react';
-import TabelaProdutos from '../components/TabelaProdutos';
-import data from '../assets/data.json';
-import HeaderBar from '../components/HeaderBar';
-import SideBarMenu from '../components/SideBarMenu';
+import TabelaProdutos from '../../components/TabelaProdutos/TabelaProdutos';
+import HeaderBar from '../../components/HeaderBar/HeaderBar';
+import SideBarMenu from '../../components/SideBarMenu/SideBarMenu';
+import data from '../../assets/data.json';
 
 export default function ListaProdutos() {
     return (

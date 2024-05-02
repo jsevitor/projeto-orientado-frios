@@ -1,4 +1,4 @@
-import '../styles/components/headerBar.sass'
+import '../HeaderBar/headerBar.sass'
 
 export default function HeaderBar() {
     return(

@@ -1,7 +1,7 @@
-import HeaderBar from "../components/HeaderBar";
-import SideBarMenu from "../components/SideBarMenu";
+import HeaderBar from "../../components/HeaderBar/HeaderBar";
+import SideBarMenu from "../../components/SideBarMenu/SideBarMenu";
 
-import '../styles/pages/home.sass'
+import '../Home/home.sass'
 
 export default function Home() {
     return (

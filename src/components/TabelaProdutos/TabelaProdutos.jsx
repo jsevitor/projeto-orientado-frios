@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/components/tabelaProdutos.sass'
+import '../TabelaProdutos/tabelaProdutos.sass'
 
 export default function TabelaProdutos({ products }) {
   return (

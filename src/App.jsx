@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import CadastroForncedor from './pages/CadastroForncedor'
-import CadastroProduto from './pages/CadastroProduto'
-import CadastroUsuario from './pages/CadastroUsuario'
-import EntradaProduto from './pages/EntradaProduto'
-import RetiradaProduto from './pages/RetiradaProduto'
+import CadastroFornecedor from './pages/CadastroFornecedor/CadastroFornecedor'
+import CadastroProduto from './pages/CadastroProduto/CadastroProduto'
+import CadastroUsuario from './pages/CadastroUsuario/CadastroUsuario'
+import EntradaProduto from './pages/EntradaProduto/EntradaProduto'
+import RetiradaProduto from './pages/RetiradaProduto/RetiradaProduto'
 
 import './styles/index.sass'
-import ListaProdutos from './pages/ListaProdutos'
-import Home from './pages/Home'
+import ListaProdutos from './pages/ListaProdutos/ListaProdutos'
+import Home from './pages/Home/Home'
 
 export default function App() {
   
@@ -18,7 +18,7 @@ export default function App() {
         <Routes>
           
           <Route index element={ <Home /> } />
-          <Route path='/fornecedor' element={<CadastroForncedor/>} />
+          <Route path='/fornecedor' element={<CadastroFornecedor/>} />
           <Route path='/produtos' element={<CadastroProduto/>} />
           <Route path='/usuario' element={<CadastroUsuario/>} />
           <Route path='/entrada' element={<EntradaProduto />} />
