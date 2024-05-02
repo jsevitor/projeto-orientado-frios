@@ -19,14 +19,6 @@ export default function SideBarMenu() {
         localStorage.setItem('menuCollapsed', menuCollapsed);
     }, [isOpenProdutosSubMenu, isOpenCadastrosSubMenu, menuCollapsed]);
 
-    // useEffect(() => {
-    //     localStorage.setItem('isOpenCadastrosSubMenu', isOpenCadastrosSubMenu);
-    // }, [isOpenCadastrosSubMenu]);
-
-    // useEffect(() => {
-    //     localStorage.setItem('menuCollapsed', menuCollapsed);
-    // }, [menuCollapsed]);
-
     const toggleProdutosSubMenu = () => {
         setIsOpenProdutosSubMenu(!isOpenProdutosSubMenu);
 
