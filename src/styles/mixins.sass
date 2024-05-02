@@ -1,4 +1,4 @@
-@use 'variables'
+@use '../styles/variables'
 
 @mixin page_container
     display: flex
@@ -8,7 +8,7 @@
     width: 100%
     padding: 2rem
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: center
 
 @mixin card
@@ -18,13 +18,13 @@
     border-radius: .5rem
 
 @mixin card_header
-    height: 3rem
-    width: 40rem
-    padding: 1rem
+    padding: .5rem 2rem
     display: flex
     align-items: center
     background-image: variables.$main-gradient
     border-radius: .5rem .5rem 0 0
+
+
 
 @mixin card_body
     width: 40rem
