@@ -11,15 +11,15 @@
     justify-content: right
     font-size: 20px
 
-    &:hover
+    &:hover i
         cursor: pointer
-        color: variables.$primary-color
+        color: variables.$primary-dark
 
 .menu
-    padding: 2rem 1rem 0 0
+    padding: 2rem .5rem
     display: flex
     flex-direction: column
-    gap: 1rem
+    gap: .5rem
 
     li
         font-size: 12px
@@ -27,31 +27,49 @@
 
     a
         display: flex
+        align-items: center
         gap: .5rem
-        padding: .5rem 1rem
-        border: 1px solid transparent 
+        padding: .3rem .5rem
+        border: 1px solid transparent
 
-        &:hover 
+        &:hover
             border-left: 5px solid variables.$primary-dark
-            color: variables.$white
+            // color: variables.$white
 
-        .icons 
-            font-size: 20px
-            color: inherit 
+        i
+            font-size: 25px
+            color: inherit
 
-        h2 
-            margin: 0 
+        h2, h3
+            margin: 0
+            text-shadow: none
 
-        &:hover .icons 
-            color: variables.$white
-
-        &:hover h2 
+        &:hover i
             color: variables.$primary-dark
+
+        &:hover h2
+            color: variables.$primary-dark
+
 
 .subMenu
+    display: none
+    transition: opacity 1s ease 0s
+
     li
-        margin-left: 1rem
+        margin-left: 2rem
+        margin-top: .5rem
 
     a
-        &:hover h3 
+        &:hover h3
             color: variables.$primary-dark
+
+.collapsedSubMenu
+    display: block
+
+.collapsed
+    width: 70px
+
+.menu_option.active
+    h2, i
+        color: variables.$primary-dark
+    border-left: 5px solid variables.$primary-dark
