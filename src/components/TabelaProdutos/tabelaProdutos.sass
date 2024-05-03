@@ -1,23 +1,31 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-
-// .tabela .page_container
-//     height: auto
-
 .tabela .content_container
     // background-image: url("src/assets/ham.svg")
     background-repeat: no-repeat
     background-size: cover
 
+.tabela
+    background-color: variables.$secondary
+
 .tabela .table_header
     background-color: variables.$primary-color
 
-    tr>th
+    th
         padding: .5rem 1rem
         width: 200px
 
 .tabela .table_body
-     tr>td
+    td
         padding: .1rem .5rem
         width: 200px
+        text-align: center
+
+        i
+            padding: .5rem
+            font-size: 18px
+
+        &:hover i
+            cursor: pointer
+            

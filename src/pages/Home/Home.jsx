@@ -10,7 +10,10 @@ export default function Home() {
             <div className="page_container">
                 <SideBarMenu />
                 <div className="content_container">
-                   
+                   <span>
+                       <h1>Bem-vindo!</h1>
+                       <p>(Alguma coisa aqui)</p>
+                   </span>
                 </div>
             </div>
         </div>
