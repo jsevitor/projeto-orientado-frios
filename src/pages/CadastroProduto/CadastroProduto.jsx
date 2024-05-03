@@ -14,6 +14,7 @@ export default function CadastroProduto() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Cadastro de Produto</h2>
+                            <i class='bx bx-grid-alt'></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">
@@ -48,8 +49,13 @@ export default function CadastroProduto() {
                                 <input type="text" />
                             </div>
                             <div className="forms picture">
-                                <label htmlFor="">Foto</label>
+                                <label htmlFor="">Imagem</label>
                                 <input type="file" />
+                            </div>
+                            <div className='picture_view commum'>
+                                <span>
+                                    Teste
+                                </span>
                             </div>
                             <div className="action_btn commum">
                                 <div className="btn">Adicionar</div>

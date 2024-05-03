@@ -41,7 +41,7 @@ export default function SideBarMenu() {
         if (isOpenProdutosSubMenu) {
             setIsOpenProdutosSubMenu(!isOpenProdutosSubMenu)
         }
-        
+
         if (isOpenCadastrosSubMenu) {
             setIsOpenCadastrosSubMenu(!isOpenCadastrosSubMenu)
         }
@@ -62,10 +62,10 @@ export default function SideBarMenu() {
                 </li>
                 <li>
                     <a href='#' className='menu_option' onClick={toggleProdutosSubMenu}>
-                        <i class='bx bx-list-ol' ></i>
+                        <i class='bx bx-grid-alt'></i>
                         {!menuCollapsed && <h2>Produtos</h2>}
                         {!menuCollapsed &&
-                            <i className={`bx ${isOpenCadastrosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
+                            <i className={`bx ${isOpenProdutosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                         }
                     </a>
                     {isOpenProdutosSubMenu &&

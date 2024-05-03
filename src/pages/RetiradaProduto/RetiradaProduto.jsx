@@ -14,6 +14,7 @@ export default function RetiradaProduto() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Retirada de Produto</h2>
+                            <i class='bx bx-message-square-minus' ></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">

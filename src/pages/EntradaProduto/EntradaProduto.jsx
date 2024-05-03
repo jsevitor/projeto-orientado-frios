@@ -14,6 +14,7 @@ export default function EntradaProduto() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Entrada de Produto</h2>
+                            <i class='bx bx-message-square-add' ></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">

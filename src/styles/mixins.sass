@@ -12,17 +12,21 @@
     justify-content: center
 
 @mixin card
-    -webkit-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
-    -moz-box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
     box-shadow: 10px 10px 15px -8px rgba(47,47,47,0.5)
     border-radius: .5rem
 
 @mixin card_header
-    padding: .5rem 2rem
+    padding: 1rem 2rem
     display: flex
     align-items: center
+    justify-content: space-between
     background-image: variables.$main-gradient
     border-radius: .5rem .5rem 0 0
+
+    i
+        color: variables.$secondary
+        font-size: 35px
+        opacity: .3
 
 @mixin card_body
     width: 40rem
@@ -41,4 +45,4 @@
     &:hover
         color: variables.$white
         background-color: variables.$primary-dark
-        border: 1px solid variables.$primary-color
+        scale: 1.05

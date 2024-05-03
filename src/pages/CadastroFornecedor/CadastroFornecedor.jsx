@@ -14,6 +14,7 @@ export default function CadastroFornecedor() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Cadastro de Fornecedor</h2>
+                            <i class='bx bxs-truck' ></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">
