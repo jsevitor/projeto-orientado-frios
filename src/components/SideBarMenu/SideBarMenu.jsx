@@ -93,7 +93,7 @@ export default function SideBarMenu() {
                     }
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/movimentacoes">
                         <i class='bx bx-transfer' ></i>
                         {!menuCollapsed && <h2>Movimentações</h2>}
                     </a>

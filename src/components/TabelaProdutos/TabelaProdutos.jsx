@@ -4,7 +4,7 @@ import '../TabelaProdutos/tabelaProdutos.sass'
 
 export default function TabelaProdutos({ products }) {
   return (
-    <table className='tabela'>
+    <table className='table'>
       <thead className='table_header'>
         <tr>
           <th>ID</th>
@@ -20,7 +20,7 @@ export default function TabelaProdutos({ products }) {
         {products.map((product, index) => (
           <tr key={index}>
             <td>{product.id}</td>
-            <td><img src={product.foto} style={{ width: '50px', height: 'auto' }} /></td>
+            <td><img src={product.foto} /></td>
             <td>{product.nome}</td>
             <td>{product.categoria}</td>
             <td>{product.fornecedor}</td>
