@@ -3,9 +3,12 @@
 .nav_container
     background-color: variables.$secondary
     width: 350px
-    height: auto
+    height: variables.$height-size
     padding: 1rem
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.3)
+    position: sticky
+    top: 80px
+    left: 0
 
 #hideMenu
     display: flex
@@ -36,7 +39,7 @@
 
         &:hover
             border-left: 5px solid variables.$primary-dark
-            padding: 0 .3rem 
+            padding: .3rem 
 
         i
             font-size: 25px
