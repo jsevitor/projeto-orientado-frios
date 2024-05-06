@@ -46,3 +46,13 @@
 
 .btn
     @include mixins.btn
+
+
+@media screen and (max-width: 768px)
+    .card_body
+        grid-template-columns: repeat(3, 1fr)
+        gap: .5rem
+
+    .forms
+        label
+            font-size: 12px

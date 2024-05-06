@@ -1,6 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../SideBarMenu/sideBarMenu.sass'
-import { useEffect } from 'react';
 
 export default function SideBarMenu() {
     const [isOpenProdutosSubMenu, setIsOpenProdutosSubMenu] = useState(() => {
