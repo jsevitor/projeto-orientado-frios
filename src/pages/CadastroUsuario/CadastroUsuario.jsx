@@ -14,7 +14,7 @@ export default function CadastroUsuario() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Cadastro de Usuário</h2>
-                            <i class='bx bx-id-card' ></i>
+                            <i class='bx bx-user-circle'></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">
