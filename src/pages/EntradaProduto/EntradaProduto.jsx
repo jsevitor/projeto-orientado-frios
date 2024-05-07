@@ -5,6 +5,7 @@ import '../../styles/cadastros.sass'
 import '../EntradaProduto/entradaProduto.sass'
 
 export default function EntradaProduto() {
+    
     return (
         <div className='entrada'>
             <HeaderBar />
@@ -52,9 +53,10 @@ export default function EntradaProduto() {
                             </div>
                             <div className="action_btn commum">
                                 <div className="btn">Adicionar</div>
-                                <div className="btn">Remover</div>
-                                <div className="btn">Editar</div>
+                                {/* <div className="btn">Remover</div> */}
+                                {/* <div className="btn">Editar</div> */}
                                 <div className="btn">Cancelar</div>
+                                <div className="btn">Visualizar</div>
                             </div>
                         </div>
                     </div>
