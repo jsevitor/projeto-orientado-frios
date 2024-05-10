@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react'
-import '../SideBarMenu/sideBarMenu.sass'
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+import '../SideBarMenu/sideBarMenu.sass';
 
 export default function SideBarMenu() {
     const [isOpenProdutosSubMenu, setIsOpenProdutosSubMenu] = useState(() => {
@@ -56,54 +58,54 @@ export default function SideBarMenu() {
                 <ul className="menu_list">
                     <li className='list_item'>
                         <div className="nav_link">
-                            <a href="/" className='menu_option'>
-                                <i class='bx bx-cog'></i>
+                            <Link to="/" className='menu_option'>
+                                <i className='bx bx-cog'></i>
                                 {!menuCollapsed && <h2>Painel de Controle</h2>}
-                            </a>
+                            </Link>
                         </div>
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <a href='#' className='menu_option' onClick={toggleProdutosSubMenu}>
-                                <i class='bx bx-grid-alt'></i>
+                            <Link to="#" className='menu_option' onClick={toggleProdutosSubMenu}>
+                                <i className='bx bx-grid-alt'></i>
                                 {!menuCollapsed && <h2>Produtos</h2>}
                                 {!menuCollapsed &&
                                     <i className={`bx ${isOpenProdutosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                                 }
-                            </a>
+                            </Link>
                         </div>
                         {isOpenProdutosSubMenu &&
                             <ul className={`subMenu ${isOpenProdutosSubMenu ? 'collapsedSubMenu' : ''}`}>
-                                <li className="nav_link"><a href="/entrada"><h3>Entrada de Produtos</h3></a></li>
-                                <li className="nav_link"><a href="/retirada"><h3>Retirada de Produtos</h3></a></li>
-                                <li className="nav_link"><a href="/lista-produtos"><h3>Lista de Produtos</h3></a></li>
+                                <li className="nav_link"><Link to="/entrada"><h3>Entrada de Produtos</h3></Link></li>
+                                <li className="nav_link"><Link to="/retirada"><h3>Retirada de Produtos</h3></Link></li>
+                                <li className="nav_link"><Link to="/lista-produtos"><h3>Lista de Produtos</h3></Link></li>
                             </ul>
                         }
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <a href='#' className='menu_option' onClick={toggleCadastrosSubMenu}>
-                                <i class='bx bx-id-card' ></i>
+                            <Link to="#" className='menu_option' onClick={toggleCadastrosSubMenu}>
+                                <i className='bx bx-id-card' ></i>
                                 {!menuCollapsed && <h2>Cadastros</h2>}
                                 {!menuCollapsed &&
                                     <i className={`bx ${isOpenCadastrosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                                 }
-                            </a>
+                            </Link>
                         </div>
                         {isOpenCadastrosSubMenu &&
                             <ul className={`subMenu ${isOpenCadastrosSubMenu ? 'collapsedSubMenu' : ''}`}>
-                                <li className="nav_link"><a href="/fornecedor"><h3>Cadastro de Fornecedor</h3></a></li>
-                                <li className="nav_link"><a href="/produtos"><h3>Cadastro de Produtos</h3></a></li>
-                                <li className="nav_link"><a href="/usuario"><h3>Cadastro de Usuário</h3></a></li>
+                                <li className="nav_link"><Link to="/fornecedor"><h3>Cadastro de Fornecedor</h3></Link></li>
+                                <li className="nav_link"><Link to="/produtos"><h3>Cadastro de Produtos</h3></Link></li>
+                                <li className="nav_link"><Link to="/usuario"><h3>Cadastro de Usuário</h3></Link></li>
                             </ul>
                         }
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <a href="/movimentacoes">
-                                <i class='bx bx-transfer' ></i>
+                            <Link to="/movimentacoes">
+                                <i className='bx bx-transfer' ></i>
                                 {!menuCollapsed && <h2>Movimentações</h2>}
-                            </a>
+                            </Link>
                         </div>
                     </li>
                 </ul>

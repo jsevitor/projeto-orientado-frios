@@ -1,20 +1,15 @@
-import HeaderBar from '../../components/HeaderBar/HeaderBar'
-import SideBarMenu from "../../components/SideBarMenu/SideBarMenu"
+import React from 'react';
 
 import '../../styles/cadastros.sass'
 import '../CadastroProduto/cadastroProduto.sass'
 
 export default function CadastroProduto() {
     return (
-        <div className='produto'>
-            <HeaderBar />
-            <div className="page_container">
-                <SideBarMenu />
-                <div className="content_container">
+                <div className="produto content_container">
                     <div className='card'>
                         <div className="card_header">
                             <h2>Cadastro de Produto</h2>
-                            <i class='bx bx-grid-alt'></i>
+                            <i className='bx bx-grid-alt'></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">
@@ -66,7 +61,5 @@ export default function CadastroProduto() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     );
 }
