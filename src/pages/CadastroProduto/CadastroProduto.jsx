@@ -9,7 +9,7 @@ export default function CadastroProduto() {
                     <div className='card'>
                         <div className="card_header">
                             <h2>Cadastro de Produto</h2>
-                            <i className='bx bx-grid-alt'></i>
+                            <i className='bx bx-package'></i>
                         </div>
                         <div className="card_body">
                             <div className="forms">

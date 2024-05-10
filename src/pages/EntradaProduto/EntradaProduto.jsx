@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../styles/cadastros.sass'
 import '../EntradaProduto/entradaProduto.sass'
+import Button from '../../components/Button/Button';
 
 export default function EntradaProduto() {
 
@@ -47,11 +48,9 @@ export default function EntradaProduto() {
                         <input type="text" />
                     </div>
                     <div className="action_btn commum">
-                        <div className="btn">Adicionar</div>
-                        {/* <div className="btn">Remover</div> */}
-                        {/* <div className="btn">Editar</div> */}
-                        <div className="btn">Cancelar</div>
-                        <div className="btn">Visualizar</div>
+                        <Button label={"Adicionar"}/>
+                        <Button label={"Cancelar"} />
+                        <Button label={"Visualizar"} to={'/tabela-entradas'} />
                     </div>
                 </div>
             </div>

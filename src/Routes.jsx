@@ -8,6 +8,8 @@ import EntradaProduto from './pages/EntradaProduto/EntradaProduto'
 import RetiradaProduto from './pages/RetiradaProduto/RetiradaProduto'
 import ListaProdutos from './pages/ListaProdutos/ListaProdutos'
 import Movimentacoes from './pages/Movimentacoes/Movimentacoes'
+import PainelControle from './pages/PainelControle/PainelControle';
+import ViewTabEntrada from './pages/ViewTabEntrada/ViewTabEntrada';
 
 export default () => {
 
@@ -21,6 +23,8 @@ export default () => {
           <Route path='/retirada' element={<RetiradaProduto />} />
           <Route path='/lista-produtos' element={<ListaProdutos />} />
           <Route path='/movimentacoes' element={<Movimentacoes />} />
+          <Route path='/painel-controle' element={<PainelControle />} />
+          <Route path='/tabela-entradas' element={<viewTabEntrada />} />
         </Routes>
     );
 }

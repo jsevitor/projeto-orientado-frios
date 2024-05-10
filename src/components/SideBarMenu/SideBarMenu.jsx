@@ -59,15 +59,15 @@ export default function SideBarMenu() {
                     <li className='list_item'>
                         <div className="nav_link">
                             <Link to="/" className='menu_option'>
-                                <i className='bx bx-cog'></i>
-                                {!menuCollapsed && <h2>Painel de Controle</h2>}
+                            <i className='bx bx-home'></i>
+                                {!menuCollapsed && <h2>Início</h2>}
                             </Link>
                         </div>
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
                             <Link to="#" className='menu_option' onClick={toggleProdutosSubMenu}>
-                                <i className='bx bx-grid-alt'></i>
+                                <i className='bx bx-package'></i>
                                 {!menuCollapsed && <h2>Produtos</h2>}
                                 {!menuCollapsed &&
                                     <i className={`bx ${isOpenProdutosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
@@ -105,6 +105,14 @@ export default function SideBarMenu() {
                             <Link to="/movimentacoes">
                                 <i className='bx bx-transfer' ></i>
                                 {!menuCollapsed && <h2>Movimentações</h2>}
+                            </Link>
+                        </div>
+                    </li>
+                    <li className='list_item'>
+                        <div className="nav_link">
+                            <Link to="/painel-controle">
+                                <i className='bx bx-cog' ></i>
+                                {!menuCollapsed && <h2>Painel de Controle</h2>}
                             </Link>
                         </div>
                     </li>
