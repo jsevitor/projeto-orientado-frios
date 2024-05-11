@@ -1,15 +1,44 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-.painelControle .controle_option
+.view_entrada .content_container
+    // background-image: url("src/assets/ham.svg")
+    background-repeat: no-repeat
+    background-size: cover
 
-    i
-        font-size: 60px
+.table
+    background-color: variables.$secondary
+    border-radius: .5rem
 
-    h3
-        font-size: 16px
-        text-shadow: none
+.table .table_header
+    background-color: variables.$primary-color
+    
+    th
+        padding: .5rem 1rem
+        width: auto
+
+.table .table_body
+    td
+        padding: .1rem .5rem
+        width: auto
+        // text-align: center
+
+        img
+            width: 20px
+            height: 20px
+            border-radius: 100%
+
+        i
+            padding: .5rem
+            font-size: 18px
+
+        &:hover i
+            cursor: pointer
+            
+.bx-trash:hover, 
+.bx-edit:hover
+    color: variables.$primary-dark
 
 @media screen and (max-width: 768px)
-    .painelControle .forms
+    .view_entrada .forms
         grid-column: 1 / span 3

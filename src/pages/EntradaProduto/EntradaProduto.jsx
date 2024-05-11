@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../../styles/cadastros.sass'
 import '../EntradaProduto/entradaProduto.sass'
 import Button from '../../components/Button/Button';
 
 export default function EntradaProduto() {
+    const [formData, setFormData] = useState({
+        id: '',
+        produto: '',
+        quantidade: '',
+        fornecedor: '',
+        dataEntrada: '',
+        numeroLote: '',
+        precoCompra: ''
+    });
 
     return (
         <div className="entrada content_container">

@@ -1,14 +1,32 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-.table .content_container
-    // background-image: url("src/assets/ham.svg")
-    background-repeat: no-repeat
-    background-size: cover
+.produtosCadastrados
+    flex-direction: column
+    // align-items: center
+
+.page_title
+    display: flex
+    justify-content: left
+
+.search_container
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 1rem .5rem 
+
+    input
+        width: 350px
+        padding: .2rem .8rem 
+        background-color: variables.$secondary
+        border: 1px solid variables.$primary-color
+        border-radius: 50px
+        outline: none
 
 .table
     background-color: variables.$secondary
     border-radius: .5rem
+    width: 100%
 
 .table .table_header
     background-color: variables.$primary-color
@@ -34,6 +52,10 @@
 
         &:hover i
             cursor: pointer
+
+        &.middle
+            text-align: center
+
             
 .bx-trash:hover, 
 .bx-edit:hover

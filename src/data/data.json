@@ -1,0 +1,84 @@
+{
+  "produtos": [
+    {
+      "id": "001",
+      "nome": "Salame Italiano",
+      "categoria": "Embutidos",
+      "fornecedor": "Fornecedor A",
+      "marca": "Marca X",
+      "foto": "https://www.banca43.com.br/cdn/imagens/produtos/det/8905.jpg"
+    },
+    {
+      "id": "002",
+      "nome": "Presunto Parma",
+      "categoria": "Frios",
+      "fornecedor": "Fornecedor B",
+      "marca": "Marca Y",
+      "foto": "https://hiperideal.vtexassets.com/arquivos/ids/182754-800-450?v=637261775603500000&width=800&height=450&aspect=true"
+    },
+    {
+      "id": "003",
+      "nome": "Queijo Gouda",
+      "categoria": "Frios",
+      "fornecedor": "Fornecedor C",
+      "marca": "Marca Z",
+      "foto": "https://acdn.mitiendanube.com/stores/738/706/products/queijo-tipo-gouda-pedaco-300g-011-88ef3126bcdcf51de216009784563202-640-0.jpg"
+    },
+    {
+      "id": "004",
+      "nome": "Pepperoni",
+      "categoria": "Embutidos",
+      "fornecedor": "Fornecedor A",
+      "marca": "Marca X",
+      "foto": "https://media.istockphoto.com/id/169943249/pt/foto/heap-de-pepperoni.jpg?s=612x612&w=0&k=20&c=QSRgFG9TMM-GImVTTuy8_y9u3hD6E1LZlr2rIczHL8M="
+    },
+    {
+      "id": "005",
+      "nome": "Presunto Cozido",
+      "categoria": "Frios",
+      "fornecedor": "Fornecedor B",
+      "marca": "Marca Y",
+      "foto": "https://redemix.vteximg.com.br/arquivos/ids/206523-1000-1000/6541.jpg?v=638350590990600000"
+    },
+    {
+      "id": "006",
+      "nome": "Mortadela",
+      "categoria": "Embutidos",
+      "fornecedor": "Fornecedor C",
+      "marca": "Marca Z",
+      "foto": "https://madureira.acouguebomboi.com.br/wp-content/uploads/2022/02/2679396.jpeg"
+    },
+    {
+      "id": "007",
+      "nome": "Salame de Frango",
+      "categoria": "Embutidos",
+      "fornecedor": "Fornecedor A",
+      "marca": "Marca X",
+      "foto": "https://www.redesuperbom.com.br/uploads/produtos/22495_barcelos_mortadela_mortadela-confianca-kg-frango-pedaco.jpg"
+    },
+    {
+      "id": "008",
+      "nome": "Queijo Prato",
+      "categoria": "Frios",
+      "fornecedor": "Fornecedor B",
+      "marca": "Marca Y",
+      "foto": "https://www.casamissao.com.br/wp-content/uploads/2020/12/queijo-prato-fatiado.jpg"
+    },
+    {
+      "id": "009",
+      "nome": "Linguiça Toscana",
+      "categoria": "Embutidos",
+      "fornecedor": "Fornecedor C",
+      "marca": "Marca Z",
+      "foto": "https://images-food.ifcshop.com.br/produto/21238_0_20200423192944.jpg"
+    },
+    {
+      "id": "010",
+      "nome": "Presunto Cru",
+      "categoria": "Frios",
+      "fornecedor": "Fornecedor A",
+      "marca": "Marca X",
+      "foto": "https://cdnv2.moovin.com.br/bancadoholandes/imagens/produtos/det/e1c135b96f3fb146d87dec9b5bc85973fcc79dda_2504241216388609.jpeg"
+    }
+  ]
+}

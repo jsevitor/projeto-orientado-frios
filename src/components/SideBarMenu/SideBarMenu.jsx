@@ -78,7 +78,7 @@ export default function SideBarMenu() {
                             <ul className={`subMenu ${isOpenProdutosSubMenu ? 'collapsedSubMenu' : ''}`}>
                                 <li className="nav_link"><Link to="/entrada"><h3>Entrada de Produtos</h3></Link></li>
                                 <li className="nav_link"><Link to="/retirada"><h3>Retirada de Produtos</h3></Link></li>
-                                <li className="nav_link"><Link to="/lista-produtos"><h3>Lista de Produtos</h3></Link></li>
+                                <li className="nav_link"><Link to="/produtos-cadastrados"><h3>Produtos Cadastrados</h3></Link></li>
                             </ul>
                         }
                     </li>
