@@ -17,13 +17,6 @@ export default function ProdutosCadastrados() {
                     </div>
                 </div>
             </div>
-            {/* <div className='search_container'>
-                <input type="text" placeholder='Pesquisar'/>
-                <div className='filters'>
-                    <span>Filtros</span>
-                    <i className='bx bx-filter-alt'></i>
-                </div>
-            </div> */}
             <table className='table'>
                 <thead className='table_header'>
                     <tr>

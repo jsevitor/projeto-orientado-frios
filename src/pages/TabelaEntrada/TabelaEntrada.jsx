@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../ViewTabEntrada/viewTabEntrada.sass'
+import '../TabelaEntrada/tabelaEntrada.sass';
 
-export default function ViewTabEntrada() {
+export default function TabelaEntrada() {
 
     return (
         <div className="view_entrada content_container">

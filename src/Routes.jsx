@@ -8,7 +8,7 @@ import EntradaProduto from './pages/EntradaProduto/EntradaProduto';
 import RetiradaProduto from './pages/RetiradaProduto/RetiradaProduto';
 import Movimentacoes from './pages/Movimentacoes/Movimentacoes';
 import PainelControle from './pages/PainelControle/PainelControle';
-import ViewTabEntrada from './pages/ViewTabEntrada/ViewTabEntrada';
+import TabelaEntrada from './pages/TabelaEntrada/TabelaEntrada';
 import ProdutosCadastrados from './pages/ProdutosCadastrados/ProdutosCadastrados';
 
 export default () => {
@@ -24,7 +24,7 @@ export default () => {
           <Route path='/produtos-cadastrados' element={<ProdutosCadastrados />} />
           <Route path='/movimentacoes' element={<Movimentacoes />} />
           <Route path='/painel-controle' element={<PainelControle />} />
-          <Route path='/tabela-entradas' element={<ViewTabEntrada />} />
+          <Route path='/tabela-entradas' element={<TabelaEntrada />} />
         </Routes>
     );
 }

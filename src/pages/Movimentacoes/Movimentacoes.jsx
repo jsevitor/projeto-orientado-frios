@@ -24,7 +24,7 @@ export default function Movimentacoes({ }) {
                         <th>ID</th>
                         <th>Produto</th>
                         <th>Data de Saída</th>
-                        <th>Quantidade</th>
+                        <th>Qtde</th>
                         <th>Forma de Pagamento</th>
                         <th>Valor Un. Compra</th>
                         <th>Valor Total Compra</th>
