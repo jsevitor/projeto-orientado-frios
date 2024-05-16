@@ -9,14 +9,21 @@ export default function ProdutosCadastrados() {
         <div className="produtosCadastrados content_container">
             <div className='page_title'>
                 <h3>Produtos Cadastrados</h3>
+                <div className='filters'>
+                    <input type="text" placeholder='Pesquisar'/>
+                    <div>
+                        <span>Filtros</span>
+                        <i className='bx bx-filter-alt'></i>
+                    </div>
+                </div>
             </div>
-            <div className='search_container'>
+            {/* <div className='search_container'>
                 <input type="text" placeholder='Pesquisar'/>
                 <div className='filters'>
                     <span>Filtros</span>
                     <i className='bx bx-filter-alt'></i>
                 </div>
-            </div>
+            </div> */}
             <table className='table'>
                 <thead className='table_header'>
                     <tr>

@@ -5,6 +5,7 @@ import SideBarMenu from './components/SideBarMenu/SideBarMenu';
 import Routes from './Routes';
 
 import './styles/index.sass';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
           <SideBarMenu />
           <Routes />
         </div>
+        <Footer />
       </BrowserRouter>
     </>
   )

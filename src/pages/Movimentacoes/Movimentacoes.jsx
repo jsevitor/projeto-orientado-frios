@@ -2,10 +2,22 @@ import React from 'react';
 
 import '../Movimentacoes/movimentacoes.sass'
 
+import data from '../../data/data.json'
+
 export default function Movimentacoes({ }) {
 
     return (
         <div className="movimentation content_container">
+            <div className='page_title'>
+                <h3>Movimentações</h3>
+                <div className='filters'>
+                    <input type="text" placeholder='Pesquisar' />
+                    <div>
+                        <span>Filtros</span>
+                        <i className='bx bx-filter-alt'></i>
+                    </div>
+                </div>
+            </div>
             <table className='table'>
                 <thead className='table_header'>
                     <tr>
@@ -22,22 +34,22 @@ export default function Movimentacoes({ }) {
                     </tr>
                 </thead>
                 <tbody className='table_body'>
-                    <tr>
-                        <td>ID</td>
-                        <td>Produto</td>
-                        <td>Data de Saída</td>
-                        <td>Quantidade</td>
-                        <td>Forma de Pagamento</td>
-                        <td>Valor Un. Compra</td>
-                        <td>Valor Total Compra</td>
-                        <td>Valor Un. Saída</td>
-                        <td>Valor Total Saída</td>
-                        <td>Lucro</td>
-                    </tr>
-
+                    {data.movimentacoes.map((product, index) => (
+                        <tr key={index}>
+                            <td>{product.id}</td>
+                            <td>{product.produto}</td>
+                            <td>{product.data_saida}</td>
+                            <td>{product.quantidade}</td>
+                            <td>{product.forma_pagamento}</td>
+                            <td>R${product.valor_unidade_compra},00</td>
+                            <td>R${product.valor_total_compra},00</td>
+                            <td>R${product.valor_unidade_saida},00</td>
+                            <td>R${product.valor_total_saida},00</td>
+                            <td>R${product.lucro},00</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
     );
 }
-

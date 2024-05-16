@@ -80,5 +80,128 @@
       "marca": "Marca X",
       "foto": "https://cdnv2.moovin.com.br/bancadoholandes/imagens/produtos/det/e1c135b96f3fb146d87dec9b5bc85973fcc79dda_2504241216388609.jpeg"
     }
-  ]
+  ],
+    "movimentacoes": [
+      {
+        "id": "001",
+        "produto": "Salame Italiano",
+        "data_saida": "2024-05-01",
+        "quantidade": 2,
+        "forma_pagamento": "Cartão de Crédito",
+        "valor_unidade_compra": 10.00,
+        "valor_total_compra": 21.00,
+        "valor_unidade_saida": 15.00,
+        "valor_total_saida": 30.00,
+        "lucro": 9.00
+      },
+      {
+        "id": "002",
+        "produto": "Presunto Parma",
+        "data_saida": "2024-05-03",
+        "quantidade": 1,
+        "forma_pagamento": "Dinheiro",
+        "valor_unidade_compra": 30.00,
+        "valor_total_compra": 30.00,
+        "valor_unidade_saida": 40.00,
+        "valor_total_saida": 40.00,
+        "lucro": 10.00
+      },
+      {
+        "id": "003",
+        "produto": "Queijo Gouda",
+        "data_saida": "2024-05-05",
+        "quantidade": 3,
+        "forma_pagamento": "Pix",
+        "valor_unidade_compra": 25.00,
+        "valor_total_compra": 75.00,
+        "valor_unidade_saida": 35.00,
+        "valor_total_saida": 105.00,
+        "lucro": 30.00
+      },
+      {
+        "id": "004",
+        "produto": "Pepperoni",
+        "data_saida": "2024-05-08",
+        "quantidade": 2,
+        "forma_pagamento": "Transferência Bancária",
+        "valor_unidade_compra": 12.00,
+        "valor_total_compra": 24.00,
+        "valor_unidade_saida": 18.00,
+        "valor_total_saida": 36.00,
+        "lucro": 12.00
+      },
+      {
+        "id": "005",
+        "produto": "Presunto Cozido",
+        "data_saida": "2024-05-10",
+        "quantidade": 1,
+        "forma_pagamento": "Boleto",
+        "valor_unidade_compra": 18.00,
+        "valor_total_compra": 18.00,
+        "valor_unidade_saida": 25.00,
+        "valor_total_saida": 25.00,
+        "lucro": 7.00
+      },
+      {
+        "id": "006",
+        "produto": "Mortadela",
+        "data_saida": "2024-05-12",
+        "quantidade": 2,
+        "forma_pagamento": "Cartão de Débito",
+        "valor_unidade_compra": 8.00,
+        "valor_total_compra": 16.00,
+        "valor_unidade_saida": 12.00,
+        "valor_total_saida": 24.00,
+        "lucro": 8.00
+      },
+      {
+        "id": "007",
+        "produto": "Salame de Frango",
+        "data_saida": "2024-05-15",
+        "quantidade": 1,
+        "forma_pagamento": "Pix",
+        "valor_unidade_compra": 9.00,
+        "valor_total_compra": 9.00,
+        "valor_unidade_saida": 14.00,
+        "valor_total_saida": 14.00,
+        "lucro": 5.00
+      },
+      {
+        "id": "008",
+        "produto": "Queijo Prato",
+        "data_saida": "2024-05-18",
+        "quantidade": 3,
+        "forma_pagamento": "Dinheiro",
+        "valor_unidade_compra": 20.00,
+        "valor_total_compra": 60.00,
+        "valor_unidade_saida": 30.00,
+        "valor_total_saida": 90.00,
+        "lucro": 30.00
+      },
+      {
+        "id": "009",
+        "produto": "Linguiça Toscana",
+        "data_saida": "2024-05-20",
+        "quantidade": 2,
+        "forma_pagamento": "Boleto",
+        "valor_unidade_compra": 15.00,
+        "valor_total_compra": 30.00,
+        "valor_unidade_saida": 22.00,
+        "valor_total_saida": 44.00,
+        "lucro": 14.00
+      },
+      {
+        "id": "010",
+        "produto": "Presunto Cru",
+        "data_saida": "2024-05-25",
+        "quantidade": 1,
+        "forma_pagamento": "Transferência Bancária",
+        "valor_unidade_compra": 35.00,
+        "valor_total_compra": 35.00,
+        "valor_unidade_saida": 45.00,
+        "valor_total_saida": 45.00,
+        "lucro": 10.00
+      }
+    ]
+  
 }

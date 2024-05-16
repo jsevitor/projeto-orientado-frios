@@ -3,17 +3,21 @@
 
 .produtosCadastrados
     flex-direction: column
-    // align-items: center
+    justify-content: flex-start
 
 .page_title
-    display: flex
-    justify-content: left
+    // display: flex
+    // justify-content: left
 
-.search_container
+    // .search_container
     width: 100%
     display: flex
     justify-content: space-between
     padding: 1rem .5rem 
+
+    .filters
+        display: flex
+        gap: 1rem
 
     input
         width: 350px
@@ -25,8 +29,9 @@
 
 .table
     background-color: variables.$secondary
-    border-radius: .5rem
     width: 100%
+    border-collapse: collapse
+    font-size: 14px
 
 .table .table_header
     background-color: variables.$primary-color
@@ -34,6 +39,8 @@
     th
         padding: .5rem 1rem
         width: auto
+        color: variables.$white
+        text-align: left
 
 .table .table_body
     td
@@ -56,7 +63,9 @@
         &.middle
             text-align: center
 
-            
+table, thead, th, td
+    border: 1px solid variables.$secondary-light
+
 .bx-trash:hover, 
 .bx-edit:hover
     color: variables.$primary-dark
