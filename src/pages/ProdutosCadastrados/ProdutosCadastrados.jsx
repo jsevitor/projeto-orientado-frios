@@ -1,16 +1,44 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+// import Modal from 'react-modal';
 import data from '../../data/data.json';
-
+import Modal from '../../components/Modal/Modal';
 import './produtosCadastrados.sass';
 
 export default function ProdutosCadastrados() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [itemToDelete, setItemToDelete] = useState(null);
+
+    const openModal = () => {
+        // setItemToDelete();
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setItemToDelete(null);
+    };
+
+    const deleteItem = () => {
+        // Lógica de exclusão do item
+        console.log(`Item ${itemToDelete} excluído.`);
+        closeModal();
+    };
+
     return (
         <div className="produtosCadastrados content_container">
+            <div>
+                {isModalOpen && (
+                    <Modal
+                        closeModal={closeModal}
+                        confirmAction={deleteItem}
+                        message={`Tem certeza que deseja deletar esse item?`}
+                    />
+                )}
+            </div>
             <div className='page_title'>
                 <h3>Produtos Cadastrados</h3>
                 <div className='filters'>
-                    <input type="text" placeholder='Pesquisar'/>
+                    <input type="text" placeholder='Pesquisar' />
                     <div>
                         <span>Filtros</span>
                         <i className='bx bx-filter-alt'></i>
@@ -39,7 +67,7 @@ export default function ProdutosCadastrados() {
                             <td>{product.fornecedor}</td>
                             <td>{product.marca}</td>
                             <td className='middle'>
-                                <i class='bx bx-trash'></i>
+                                <i class='bx bx-trash' onClick={() => openModal('Item 1')}></i>
                                 <i class='bx bx-edit'></i>
                             </td>
                         </tr>
