@@ -8,8 +8,9 @@ import EntradaProduto from './pages/EntradaProduto/EntradaProduto';
 import RetiradaProduto from './pages/RetiradaProduto/RetiradaProduto';
 import Movimentacoes from './pages/Movimentacoes/Movimentacoes';
 import PainelControle from './pages/PainelControle/PainelControle';
-import TabelaEntrada from './pages/TabelaEntrada/TabelaEntrada';
 import ProdutosCadastrados from './pages/ProdutosCadastrados/ProdutosCadastrados';
+import EntradasCadastradas from './pages/EntradasCadastradas/EntradasCadastradas';
+import RetiradasCadastradas from './pages/RetiradasCadastradas/RetiradasCadastradas';
 
 export default () => {
 
@@ -23,10 +24,9 @@ export default () => {
           <Route path='/retirada' element={<RetiradaProduto />} />
           <Route path='/produtos-cadastrados' element={<ProdutosCadastrados />} />
           <Route path='/movimentacoes' element={<Movimentacoes />} />
-          <Route path='/entradas-cadastradas' element={<TabelaEntrada />}/>
-          <Route path='/retiradas-cadastradas' element={<TabelaEntrada />}/>
+          <Route path='/entradas-cadastradas' element={<EntradasCadastradas />}/>
+          <Route path='/retiradas-cadastradas' element={<RetiradasCadastradas />}/>
           <Route path='/painel-controle' element={<PainelControle />} />
-          <Route path='/tabela-entradas' element={<TabelaEntrada />} />
         </Routes>
     );
 }

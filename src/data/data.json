@@ -211,7 +211,7 @@
       "fornecedor": "Fornecedor A",
       "data_entrada": "2024-04-20",
       "numero_lote": "A001",
-      "preco_compra": 10.50
+      "preco_compra": 10.00
     },
     {
       "id": "002",
@@ -294,5 +294,87 @@
       "numero_lote": "A010",
       "preco_compra": 35.00
     }
-  ]
+  ],
+    "retiradas": [
+      {
+        "id": "001",
+        "produto": "Salame Italiano",
+        "quantidade": 5,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-01",
+        "numero_lote": "A001"
+      },
+      {
+        "id": "002",
+        "produto": "Presunto Parma",
+        "quantidade": 3,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-03",
+        "numero_lote": "B002"
+      },
+      {
+        "id": "003",
+        "produto": "Queijo Gouda",
+        "quantidade": 4,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-05",
+        "numero_lote": "C003"
+      },
+      {
+        "id": "004",
+        "produto": "Pepperoni",
+        "quantidade": 6,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-08",
+        "numero_lote": "A004"
+      },
+      {
+        "id": "005",
+        "produto": "Presunto Cozido",
+        "quantidade": 4,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-10",
+        "numero_lote": "B005"
+      },
+      {
+        "id": "006",
+        "produto": "Mortadela",
+        "quantidade": 7,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-12",
+        "numero_lote": "C006"
+      },
+      {
+        "id": "007",
+        "produto": "Salame de Frango",
+        "quantidade": 5,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-15",
+        "numero_lote": "A007"
+      },
+      {
+        "id": "008",
+        "produto": "Queijo Prato",
+        "quantidade": 8,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-18",
+        "numero_lote": "B008"
+      },
+      {
+        "id": "009",
+        "produto": "Linguiça Toscana",
+        "quantidade": 9,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-20",
+        "numero_lote": "C009"
+      },
+      {
+        "id": "010",
+        "produto": "Presunto Cru",
+        "quantidade": 2,
+        "descricao_tipo_saida": "Venda",
+        "data_retirada": "2024-05-25",
+        "numero_lote": "A010"
+      }
+    ]  
 }

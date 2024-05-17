@@ -1,0 +1,61 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+.entradas_cadastradas
+        flex-direction: column
+        justify-content: flex-start
+
+.page_title
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 1rem .5rem
+
+    .filters
+        display: flex
+        gap: 1rem
+
+    input
+        width: 350px
+        padding: .2rem .8rem
+        background-color: variables.$secondary
+        border: 1px solid variables.$primary-color
+        border-radius: 50px
+        outline: none
+
+.table
+    background-color: variables.$secondary
+    border-radius: .5rem
+
+.table .table_header
+    background-color: variables.$primary-color
+
+    th
+        padding: .5rem 1rem
+        width: auto
+
+.table .table_body
+    td
+        padding: .1rem .5rem
+        width: auto
+        // text-align: center
+
+        img
+            width: 20px
+            height: 20px
+            border-radius: 100%
+
+        i
+            padding: .5rem
+            font-size: 18px
+
+        &:hover i
+            cursor: pointer
+
+.bx-trash:hover,
+.bx-edit:hover
+    color: variables.$primary-dark
+
+@media screen and (max-width: 768px)
+    .view_entrada .forms
+        grid-column: 1 / span 3

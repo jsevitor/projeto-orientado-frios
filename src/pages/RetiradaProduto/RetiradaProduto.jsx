@@ -31,7 +31,7 @@ export default function RetiradaProduto() {
                         <input type="text" />
                     </div>
                     <div className="forms similar">
-                        <label htmlFor="">Descrição / Tipo de Saída</label>
+                        <label htmlFor="">Tipo de Saída</label>
                         <input type="text" />
                     </div>
                     <div className="forms">
