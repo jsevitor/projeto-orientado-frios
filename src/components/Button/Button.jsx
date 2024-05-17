@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import '../Button/button.sass';
 
-export default ({ label, to }) => {
+export default function Button({ label, to }) {
 
     if (to) {
         return (

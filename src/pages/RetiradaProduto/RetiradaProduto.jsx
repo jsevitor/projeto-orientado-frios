@@ -1,5 +1,10 @@
+// IMPORTAÇÃO DE BIBLIOTECAS
 import React from 'react';
 
+// IMPORTAÇÃO DE REACT COMPONENTS
+import Button from '../../components/Button/Button';
+
+// IMPORTAÇÃO DE ESTILOS CSS
 import '../../styles/cadastros.sass';
 import '../RetiradaProduto/retiradaProduto.sass';
 
@@ -38,10 +43,8 @@ export default function RetiradaProduto() {
                         <input type="text" />
                     </div>
                     <div className="action_btn commum">
-                        <div className="btn">Adicionar</div>
-                        <div className="btn">Remover</div>
-                        <div className="btn">Editar</div>
-                        <div className="btn">Cancelar</div>
+                        <Button label={"Adicionar"}/>
+                        <Button label={"Cancelar"}/>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,10 @@
+// IMPORTAÇÃO DE BIBLIOTECAS
 import React from 'react';
 
+// IMPORTAÇÃO DE REACT COMPONENTS
+import Button from '../../components/Button/Button';
+
+// IMPORTAÇÃO DE ESTILOS CSS
 import '../../styles/cadastros.sass'
 import '../CadastroFornecedor/cadastroFornecedor.sass'
 
@@ -88,10 +93,8 @@ export default function CadastroFornecedor() {
                         </div>
                     </div>
                     <div className="action_btn commum">
-                        <div className="btn">Adicionar</div>
-                        <div className="btn">Remover</div>
-                        <div className="btn">Editar</div>
-                        <div className="btn">Cancelar</div>
+                        <Button label={'Adicionar'} />
+                        <Button label={'Cancelar'} />
                     </div>
                 </div>
             </div>
