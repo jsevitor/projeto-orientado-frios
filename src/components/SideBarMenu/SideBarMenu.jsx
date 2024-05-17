@@ -54,14 +54,14 @@ export default function SideBarMenu() {
                 <ul className="menu_list">
                     <li className='list_item'>
                         <div className="nav_link">
-                            <NavLink to="/" className='nav_link'>
+                            <Link to="/" className='menu_option'>
                             <i className='bx bx-home'></i>
                                 {!menuCollapsed && <h2>Início</h2>}
-                            </NavLink>
+                            </Link>
                         </div>
                     </li>
                     <li className='list_item'>
-                        <NavLink className="nav_link">
+                        <div className="nav_link">
                             <Link to="#" className='menu_option' onClick={() => toggleSubMenu('produtos')}>
                                 <i className='bx bx-package'></i>
                                 {!menuCollapsed && <h2>Produtos</h2>}
@@ -69,7 +69,7 @@ export default function SideBarMenu() {
                                     <i className={`bx ${subMenus.produtos ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                                 }
                             </Link>
-                        </NavLink>
+                        </div>
                         {subMenus.produtos &&
                             <ul className={`subMenu ${subMenus.produtos ? 'collapsedSubMenu' : ''}`}>
                                 <li className="nav_link"><Link to="/entrada"><h3>Entrada de Produtos</h3></Link></li>
