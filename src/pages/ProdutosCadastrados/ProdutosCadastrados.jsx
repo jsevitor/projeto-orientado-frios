@@ -1,8 +1,14 @@
+// IMPORTAÇÃO DE BIBLIOTECAS
 import React, { useState } from 'react';
-// import Modal from 'react-modal';
-import data from '../../data/data.json';
+
+// IMPORTAÇÃO DE REACT COMPONENTS
 import Modal from '../../components/Modal/Modal';
+
+// IMPORTAÇÃO DE ESTILOS CSS
 import './produtosCadastrados.sass';
+
+// IMPORTAÇÃO DE DADOS
+import data from '../../data/data.json';
 
 export default function ProdutosCadastrados() {
     const [isModalOpen, setIsModalOpen] = useState(false);

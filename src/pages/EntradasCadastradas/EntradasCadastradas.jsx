@@ -1,7 +1,8 @@
 // IMPORTAÇÃO DE BIBLIOTECAS
-import React from 'react';
+import React, { useState } from 'react';
 
 // IMPORTAÇÃO DE REACT COMPONENTS
+import Modal from '../../components/Modal/Modal';
 
 // IMPORTAÇÃO DE ESTILOS CSS
 import '../EntradasCadastradas/entradasCadastradas.sass';
@@ -10,9 +11,36 @@ import '../EntradasCadastradas/entradasCadastradas.sass';
 import data from '../../data/data.json'
 
 export default function EntradasCadastradas() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [itemToDelete, setItemToDelete] = useState(null);
+
+    const openModal = () => {
+        // setItemToDelete();
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setItemToDelete(null);
+    };
+
+    const deleteItem = () => {
+        // Lógica de exclusão do item
+        console.log(`Item ${itemToDelete} excluído.`);
+        closeModal();
+    };
 
     return (
         <div className="entradas_cadastradas content_container">
+            <div>
+                {isModalOpen && (
+                    <Modal
+                        closeModal={closeModal}
+                        confirmAction={deleteItem}
+                        message={`Tem certeza que deseja deletar esse item?`}
+                    />
+                )}
+            </div>
             <div className='page_title'>
                 <h3>Entradas</h3>
                 <div className='filters'>
@@ -47,7 +75,7 @@ export default function EntradasCadastradas() {
                             <td>{product.numero_lote}</td>
                             <td>R${product.preco_compra},00</td>
                             <td>
-                                <i class='bx bx-trash'></i>
+                                <i class='bx bx-trash' onClick={openModal}></i>
                                 <i class='bx bx-edit'></i>
                             </td>
                         </tr>
