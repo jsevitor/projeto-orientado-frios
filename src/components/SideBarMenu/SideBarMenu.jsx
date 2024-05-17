@@ -4,49 +4,45 @@ import { Link } from 'react-router-dom';
 import '../SideBarMenu/sideBarMenu.sass';
 
 export default function SideBarMenu() {
-    const [isOpenProdutosSubMenu, setIsOpenProdutosSubMenu] = useState(() => {
-        return localStorage.getItem('isOpenProdutosSubMenu') === 'true';
+    const [subMenus, setSubMenus] = useState({
+        produtos: localStorage.getItem('isOpenProdutosSubMenu') === 'true',
+        cadastros: localStorage.getItem('isOpenCadastrosSubMenu') === 'true',
+        movimentacoes: localStorage.getItem('isOpenMovimentacoesSubMenu') === 'true'
     });
-    const [isOpenCadastrosSubMenu, setIsOpenCadastrosSubMenu] = useState(() => {
-        return localStorage.getItem('isOpenCadastrosSubMenu') === 'true';
-    });
+
     const [menuCollapsed, setMenuCollapsed] = useState(() => {
         return localStorage.getItem('menuCollapsed') === 'true';
     });
 
     useEffect(() => {
-        localStorage.setItem('isOpenProdutosSubMenu', isOpenProdutosSubMenu);
-        localStorage.setItem('isOpenCadastrosSubMenu', isOpenCadastrosSubMenu);
+        localStorage.setItem('isOpenProdutosSubMenu', subMenus.produtos);
+        localStorage.setItem('isOpenCadastrosSubMenu', subMenus.cadastros);
+        localStorage.setItem('isOpenMovimentacoesSubMenu', subMenus.movimentacoes);
         localStorage.setItem('menuCollapsed', menuCollapsed);
-    }, [isOpenProdutosSubMenu, isOpenCadastrosSubMenu, menuCollapsed]);
+    }, [subMenus, menuCollapsed]);
 
-    const toggleProdutosSubMenu = () => {
-        setIsOpenProdutosSubMenu(!isOpenProdutosSubMenu);
-
-        if (menuCollapsed) {
-            setMenuCollapsed(!menuCollapsed)
-        }
-    };
-
-    const toggleCadastrosSubMenu = () => {
-        setIsOpenCadastrosSubMenu(!isOpenCadastrosSubMenu);
+    const toggleSubMenu = (menu) => {
+        setSubMenus((prev) => ({
+            ...prev,
+            [menu]: !prev[menu]
+        }));
 
         if (menuCollapsed) {
-            setMenuCollapsed(!menuCollapsed)
+            setMenuCollapsed(false);
         }
-    };
+    }
 
     const toggleMenu = () => {
         setMenuCollapsed(!menuCollapsed);
 
-        if (isOpenProdutosSubMenu) {
-            setIsOpenProdutosSubMenu(!isOpenProdutosSubMenu)
+        if (subMenus.produtos || subMenus.cadastros || subMenus.movimentacoes) {
+            setSubMenus({
+                produtos: false,
+                cadastros: false,
+                movimentacoes: false
+            });
         }
-
-        if (isOpenCadastrosSubMenu) {
-            setIsOpenCadastrosSubMenu(!isOpenCadastrosSubMenu)
-        }
-    };
+    }    
 
     return (
         <nav className={`nav_container ${menuCollapsed ? 'collapsed' : ''}`}>
@@ -66,16 +62,16 @@ export default function SideBarMenu() {
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <Link to="#" className='menu_option' onClick={toggleProdutosSubMenu}>
+                            <Link to="#" className='menu_option' onClick={() => toggleSubMenu('produtos')}>
                                 <i className='bx bx-package'></i>
                                 {!menuCollapsed && <h2>Produtos</h2>}
                                 {!menuCollapsed &&
-                                    <i className={`bx ${isOpenProdutosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
+                                    <i className={`bx ${subMenus.produtos ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                                 }
                             </Link>
                         </div>
-                        {isOpenProdutosSubMenu &&
-                            <ul className={`subMenu ${isOpenProdutosSubMenu ? 'collapsedSubMenu' : ''}`}>
+                        {subMenus.produtos &&
+                            <ul className={`subMenu ${subMenus.produtos ? 'collapsedSubMenu' : ''}`}>
                                 <li className="nav_link"><Link to="/entrada"><h3>Entrada de Produtos</h3></Link></li>
                                 <li className="nav_link"><Link to="/retirada"><h3>Retirada de Produtos</h3></Link></li>
                                 <li className="nav_link"><Link to="/produtos-cadastrados"><h3>Produtos Cadastrados</h3></Link></li>
@@ -84,16 +80,16 @@ export default function SideBarMenu() {
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <Link to="#" className='menu_option' onClick={toggleCadastrosSubMenu}>
+                            <Link to="#" className='menu_option' onClick={() => toggleSubMenu('cadastros')}>
                                 <i className='bx bx-id-card' ></i>
                                 {!menuCollapsed && <h2>Cadastros</h2>}
                                 {!menuCollapsed &&
-                                    <i className={`bx ${isOpenCadastrosSubMenu ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
+                                    <i className={`bx ${subMenus.cadastros ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
                                 }
                             </Link>
                         </div>
-                        {isOpenCadastrosSubMenu &&
-                            <ul className={`subMenu ${isOpenCadastrosSubMenu ? 'collapsedSubMenu' : ''}`}>
+                        {subMenus.cadastros &&
+                            <ul className={`subMenu ${subMenus.cadastros ? 'collapsedSubMenu' : ''}`}>
                                 <li className="nav_link"><Link to="/fornecedor"><h3>Cadastro de Fornecedor</h3></Link></li>
                                 <li className="nav_link"><Link to="/produtos"><h3>Cadastro de Produtos</h3></Link></li>
                                 <li className="nav_link"><Link to="/usuario"><h3>Cadastro de Usuário</h3></Link></li>
@@ -102,11 +98,21 @@ export default function SideBarMenu() {
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">
-                            <Link to="/movimentacoes">
+                            <Link to="#" onClick={() => toggleSubMenu('movimentacoes')}>
                                 <i className='bx bx-transfer' ></i>
                                 {!menuCollapsed && <h2>Movimentações</h2>}
+                                {!menuCollapsed &&
+                                    <i className={`bx ${subMenus.movimentacoes ? 'bx-chevron-up' : 'bx-chevron-down'}`} ></i>
+                                }
                             </Link>
                         </div>
+                        {subMenus.movimentacoes &&
+                            <ul className={`subMenu ${subMenus.movimentacoes ? 'collapsedSubMenu' : ''}`}>
+                                <li className="nav_link"><Link to="/movimentacoes"><h3>Movimentações</h3></Link></li>
+                                <li className="nav_link"><Link to="/entradas-cadastradas"><h3>Entradas Cadastradas</h3></Link></li>
+                                <li className="nav_link"><Link to="/retiradas-cadastradas"><h3>Retiradas Cadastradas</h3></Link></li>
+                            </ul>
+                        }
                     </li>
                     <li className='list_item'>
                         <div className="nav_link">

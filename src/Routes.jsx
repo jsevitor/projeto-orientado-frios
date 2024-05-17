@@ -23,6 +23,8 @@ export default () => {
           <Route path='/retirada' element={<RetiradaProduto />} />
           <Route path='/produtos-cadastrados' element={<ProdutosCadastrados />} />
           <Route path='/movimentacoes' element={<Movimentacoes />} />
+          <Route path='/entradas-cadastradas' element={<TabelaEntrada />}/>
+          <Route path='/retiradas-cadastradas' element={<TabelaEntrada />}/>
           <Route path='/painel-controle' element={<PainelControle />} />
           <Route path='/tabela-entradas' element={<TabelaEntrada />} />
         </Routes>

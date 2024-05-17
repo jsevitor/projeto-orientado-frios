@@ -59,7 +59,6 @@ export default function EntradaProduto() {
                     <div className="action_btn commum">
                         <Button label={"Adicionar"}/>
                         <Button label={"Cancelar"} />
-                        <Button label={"Visualizar"} to={'/tabela-entradas'} />
                     </div>
                 </div>
             </div>
