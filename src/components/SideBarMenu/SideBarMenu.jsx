@@ -42,7 +42,7 @@ export default function SideBarMenu() {
                 movimentacoes: false
             });
         }
-    }    
+    }
 
     return (
         <nav className={`nav_container ${menuCollapsed ? 'collapsed' : ''}`}>
@@ -55,7 +55,7 @@ export default function SideBarMenu() {
                     <li className='list_item'>
                         <div className="nav_link">
                             <Link to="/" className='menu_option'>
-                            <i className='bx bx-home'></i>
+                                <i className='bx bx-home'></i>
                                 {!menuCollapsed && <h2>Início</h2>}
                             </Link>
                         </div>
@@ -123,6 +123,16 @@ export default function SideBarMenu() {
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <div className={`profile_container ${menuCollapsed ? 'collapsed' : ''}`}>
+                <span>
+                    <i className='bx bx-user-circle'></i>
+                    <h4>Fulano de Tal</h4>
+                </span>
+                <Link to={'/login'}>
+                    <i className='bx bx-exit exit' ></i>
+                </Link>
             </div>
         </nav>
     );
