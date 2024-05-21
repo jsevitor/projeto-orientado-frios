@@ -128,10 +128,10 @@ export default function SideBarMenu() {
             <div className={`profile_container ${menuCollapsed ? 'collapsed' : ''}`}>
                 <span>
                     <i className='bx bx-user-circle'></i>
-                    <h4>Fulano de Tal</h4>
+                    {!menuCollapsed && <h4>Fulano de Tal</h4>}
                 </span>
                 <Link to={'/login'}>
-                    <i className='bx bx-exit exit' ></i>
+                   {!menuCollapsed && <i className='bx bx-exit exit' ></i>}
                 </Link>
             </div>
         </nav>

@@ -11,6 +11,7 @@ import PainelControle from './pages/PainelControle/PainelControle';
 import ProdutosCadastrados from './pages/ProdutosCadastrados/ProdutosCadastrados';
 import EntradasCadastradas from './pages/EntradasCadastradas/EntradasCadastradas';
 import RetiradasCadastradas from './pages/RetiradasCadastradas/RetiradasCadastradas';
+import Login from './pages/Login/Login';
 
 export default () => {
 
@@ -27,6 +28,7 @@ export default () => {
           <Route path='/entradas-cadastradas' element={<EntradasCadastradas />}/>
           <Route path='/retiradas-cadastradas' element={<RetiradasCadastradas />}/>
           <Route path='/painel-controle' element={<PainelControle />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
     );
 }
